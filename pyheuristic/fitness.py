@@ -153,6 +153,5 @@ def place_next_piece(S, Shapes):
     S__ = place_piece(S__, best_shape, best_pocket, best_angle, best_anchor)
     Shapes = Shapes__.remove(best_shape)
     S__.plot()
-    # print(S__.up)
     S__ = place_next_piece(S__, Shapes__)
     return S__

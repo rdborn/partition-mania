@@ -6,6 +6,9 @@ from pyprocrustes.procrustesanalysis import procrustes
 from copy import deepcopy
 from constants import Shapes, N, dx, Weights
 
+# Set this to True if you want to plot every time it's close
+# (i.e. when the weights are the same)
+plotting = True
 
 tries = 0
 while(True):
@@ -73,5 +76,5 @@ while(True):
                     print("Weight: " + str(len(nodes)) + ", " + str(minval))
             if not flag:
                 print("Nope")
-            else:
+            if plotting:
                 S.plot()
