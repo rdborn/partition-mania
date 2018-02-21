@@ -3,6 +3,12 @@ import matplotlib.pyplot as plt
 from pyprocrustes.procrustesanalysis import procrustes
 
 a = np.array([[1,1],[2,1],[3,1],[2,3],[3,3],[4,1],[2,2]])
+b = np.array([[9,7]])
+b = np.array([[6,7],[8,5]])
+b = np.array([[8,7],[7,5],[8,5]])
+b = np.array([[8,7],[8,6],[7,5],[8,5]])
+b = np.array([[8,7],[7,7],[8,6],[7,5],[8,5]])
+b = np.array([[8,7],[6,7],[7,7],[8,6],[7,5],[8,5]])
 b = np.array([[8,7],[9,7],[6,7],[7,7],[8,6],[7,5],[8,5]])
 print("Here we go")
 k1, k2, c = procrustes(a,b)
